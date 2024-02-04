@@ -14,7 +14,8 @@ target/
 .idea
 .allure-results/
 .target/
-.env/
+.resources/env/**/
+.resources/env/
 *.[oa]
 *~
 
