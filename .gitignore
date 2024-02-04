@@ -14,7 +14,7 @@ target/
 .idea
 .allure-results/
 .target/
-
+.env/
 
 ### Eclipse ###
 .apt_generated
