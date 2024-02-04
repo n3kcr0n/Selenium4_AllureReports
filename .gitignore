@@ -18,6 +18,8 @@ target/
 .resources/env/
 *.[oa]
 *~
+*.properties
+*.class
 
 ### Eclipse ###
 .apt_generated
