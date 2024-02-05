@@ -1,7 +1,6 @@
 package org.coreFramework.apis;
 
 
-
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -9,6 +8,7 @@ import org.coreFramework.models.TestUser;
 import org.coreFramework.utils.ConfigUtils;
 
 import static io.restassured.RestAssured.given;
+
 
 public class TodoApi {
     //Singleton
