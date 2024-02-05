@@ -20,8 +20,6 @@ jobs:
       - name: Run Test
         run: mvn clean test
 
-      - name: Upload artifacts
-        uses: action/upload-artifact@v2
-        with:
-          name: assets-for-download
-          path: allure-report
+      - name: Check the allure reports
+        run: ls-a
+
