@@ -7,8 +7,8 @@ import io.restassured.response.Response;
 import org.coreFramework.models.TestUser;
 import org.coreFramework.utils.ConfigUtils;
 
-
 import static io.restassured.RestAssured.given;
+
 
 public class UserApi {
     //Singleton
