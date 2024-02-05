@@ -26,7 +26,7 @@ public class BaseTest implements ITestListener {
     public void tearDown(ITestResult result) {
         if(!result.isSuccess()){
             String caseName = result.getMethod().getMethodName();
-            File destination = new File("target"+File.separator+"screenshots"+File.separator+caseName+".png");
+            File destination = new File("allure-results"+File.separator+"screenshots"+File.separator+caseName+".png");
             TestUtils.takeScreenShots(driver.get(),destination);
         }
         driver.get().quit();
