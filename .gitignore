@@ -20,6 +20,7 @@ target/
 *~
 *.properties
 *.class
+/allure-results/
 
 ### Eclipse ###
 .apt_generated

@@ -42,3 +42,9 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+
+      - name: Upload Test artifacts
+        uses: actions/upload-aftifact@v2
+        with:
+          name: assets-for-download
+          path: allure-results
