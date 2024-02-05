@@ -26,6 +26,6 @@ public class UserRegistrationTest extends BaseTest {
         RegistrationPage.getInstance().registerUser(driver.get(),user.getFirstName(),user.getLastName(),user.getEmail(),user.getPassword());
         TodoPage.getInstance().addTodo(driver.get(),"Testing To Do");
         TodoPage.getInstance().deleteTodo(driver.get());
-        Assert.assertTrue(TodoPage.getInstance().validateNoToDoMessageVisible(driver.get(),"No Available Todoss"));
+        Assert.assertTrue(TodoPage.getInstance().validateNoToDoMessageVisible(driver.get(),"No Available Todos"));
     }
 }
