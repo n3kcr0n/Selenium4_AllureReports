@@ -4,6 +4,7 @@ on: [ push ]
 
 jobs:
   test:
+    name: Build TEST
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -43,6 +44,17 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+
+      - name: Upload Test Result
+        uses: actions/upload-artifact@v3
+        with:
+          name: assets-for-download
+          path: allure-results
+          if-no-files-found: error
+          retention-days: 30
+
+
+
 
 
 

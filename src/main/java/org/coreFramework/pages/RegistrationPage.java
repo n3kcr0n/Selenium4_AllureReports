@@ -1,7 +1,6 @@
 package org.coreFramework.pages;
 
 
-
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.coreFramework.apis.UserApi;
@@ -37,6 +36,7 @@ public class RegistrationPage {
     public void load(WebDriver driver){
         driver.get(ConfigUtils.getInstance().getAppUrl()+"/signup");
     }
+    @Step("Register user via User Interface")
     public void registerUser(WebDriver driver, String fName, String lName, String email, String password){
         driver.findElement(firstNameInput).sendKeys(fName);
         driver.findElement(lastNameInput).sendKeys(lName);
