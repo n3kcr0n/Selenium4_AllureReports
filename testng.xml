@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Results">
+    <test verbose="2" preserve-order="true" name="Regression">
+        <classes>
+            <class name="Test.MixUIAndAPITest">
+                <methods>
+                    <include name="beAbleToRegisterUser"/>
+                    <include name="addToDoAndDeleteToDo"/>
+                </methods>
+            </class>
+            <class name="Test.UserRegistrationTest">
+                <methods>
+                    <include name="beAbleToRegisterUser"/>
+                    <include name="addToDoAndDeleteToDo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
