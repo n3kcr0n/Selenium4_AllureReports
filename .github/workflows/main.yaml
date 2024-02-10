@@ -32,20 +32,26 @@ jobs:
       - name: Build test report
         uses: simple-elf/allure-report-action@master
         if: always()
-        id: allure-report
         with:
           gh_pages: gh-pages
-          allure_report: allure-report
           allure_history: allure-history
           allure_results: allure-results
 
       - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v3
+        if: always()
         with:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
 
+      - name: Upload Test Result
+        uses: actions/upload-artifact@v3
+        with:
+          name: assets-for-download
+          path: allure-results
+          if-no-files-found: error
+          retention-days: 30
 
 
 
