@@ -31,6 +31,7 @@ jobs:
 
       - name: Build test report
         uses: simple-elf/allure-report-action@master
+        if: always()
         id: allure-report
         with:
           gh_pages: gh-pages
