@@ -21,37 +21,6 @@ jobs:
       - name: Run Test
         run: mvn clean test
 
-      - name: Get Allure History
-        uses: actions/checkout@v3
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Build test report
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        with:
-          gh_pages: gh-pages
-          allure_history: allure-history
-          allure_results: allure-results
-
-      - name: Deploy report to Github Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: always()
-        with:
-          PERSONAL_TOKEN: ${{ secrets.CTOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
-
-      - name: Upload Test Result
-        uses: actions/upload-artifact@v3
-        with:
-          name: assets-for-download
-          path: allure-results
-          if-no-files-found: error
-          retention-days: 30
 
 
 
