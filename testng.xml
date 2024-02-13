@@ -15,6 +15,13 @@
                     <include name="addToDoAndDeleteToDo"/>
                 </methods>
             </class>
+            <class name="Test.DigitalBibleTest">
+                <methods>
+                    <include name="searchWordFunctionality"/>
+                    <include name="goToVerse"/>
+                    <include name="checkJournal"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

@@ -47,6 +47,9 @@ public class ConfigUtils {
             return prop;
         }
 
+        public String getProperty(String propName){
+            return prop.getProperty(propName);
+        }
         public String getAppUrl() {
             return prop.get("AppBaseURL").toString();
         }
