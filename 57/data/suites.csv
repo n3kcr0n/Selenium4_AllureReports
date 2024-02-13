@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Feb 13 09:24:31 GMT 2024","Tue Feb 13 09:24:38 GMT 2024","6740","Surefire suite","Surefire test","Test.DigitalBibleTest","Test.DigitalBibleTest","checkJournal","checkJournal",""
+"passed","Tue Feb 13 09:24:31 GMT 2024","Tue Feb 13 09:24:43 GMT 2024","11475","Surefire suite","Surefire test","Test.DigitalBibleTest","Test.DigitalBibleTest","searchWordFunctionality","searchWordFunctionality",""
+"passed","Tue Feb 13 09:24:31 GMT 2024","Tue Feb 13 09:24:36 GMT 2024","4074","Surefire suite","Surefire test","Test.UserRegistrationTest","Test.UserRegistrationTest","beAbleToRegisterUser","beAbleToRegisterUser","Verify to register user from UI"
+"passed","Tue Feb 13 09:24:31 GMT 2024","Tue Feb 13 09:24:40 GMT 2024","8770","Surefire suite","Surefire test","Test.MixUIAndAPITest","Test.MixUIAndAPITest","beAbleToRegisterUser","beAbleToRegisterUser","Verify to register user from UI and API"
+"passed","Tue Feb 13 09:24:31 GMT 2024","Tue Feb 13 09:24:39 GMT 2024","7216","Surefire suite","Surefire test","Test.DigitalBibleTest","Test.DigitalBibleTest","goToVerse","goToVerse",""
+"passed","Tue Feb 13 09:24:31 GMT 2024","Tue Feb 13 09:24:37 GMT 2024","5519","Surefire suite","Surefire test","Test.UserRegistrationTest","Test.UserRegistrationTest","addToDoAndDeleteToDo","addToDoAndDeleteToDo","Verify to add delete and delete it."
+"passed","Tue Feb 13 09:24:31 GMT 2024","Tue Feb 13 09:24:41 GMT 2024","9641","Surefire suite","Surefire test","Test.MixUIAndAPITest","Test.MixUIAndAPITest","addToDoAndDeleteToDo","addToDoAndDeleteToDo","Add to do and delete to do via API and UI"
