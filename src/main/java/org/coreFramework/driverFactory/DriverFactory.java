@@ -1,6 +1,6 @@
 package org.coreFramework.driverFactory;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.coreFramework.utils.ConfigUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,7 +8,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.coreFramework.utils.ConfigUtils;
 
 import java.time.Duration;
 
@@ -20,7 +19,7 @@ public class DriverFactory {
         String browserMode = ConfigUtils.getInstance().getHeadlessMode();
         switch (browser){
             case "chrome" -> {
-                WebDriverManager.chromedriver().setup();
+                //WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 if(browserMode.equals("true")){
                     options.addArguments("--remote-allow-origins=*");
@@ -30,7 +29,7 @@ public class DriverFactory {
                 driver = new ChromeDriver(options);
             }
             case "firefox" -> {
-                WebDriverManager.firefoxdriver().setup();
+                //WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions options = new FirefoxOptions();
                 if(browserMode.equals("true")){
                     options.addArguments("--headless=new");
@@ -38,7 +37,7 @@ public class DriverFactory {
                 driver = new FirefoxDriver(options);
             }
             case "edge" -> {
-                WebDriverManager.edgedriver().setup();
+               // WebDriverManager.edgedriver().setup();
                 EdgeOptions options = new EdgeOptions();
                 if(browserMode.equals("true")){
                     options.addArguments("--headless=new");
