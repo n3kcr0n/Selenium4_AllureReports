@@ -8,3 +8,4 @@ ApiVersion=/v1,
 ApiTaskPath=/tasks,
 ApiUserPath=/users,
 ApiRegisterPath=/register
+test=test
